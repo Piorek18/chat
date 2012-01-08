@@ -1,0 +1,159 @@
+/* ================================================================== */
+/* Created by: Konrad Kowalski <kkowalskipl@gmail.com> on DD-MM-RRRR  */
+/* ================================================================== */
+
+@charset "utf-8";
+
+/* === PageCSS ====================================================== */
+
+#chat {
+	width: 200px;
+	position:fixed;
+	bottom: 0px;
+	right: 460px;
+}
+	#chat .title {
+		height: 30px;
+		line-height: 30px;
+		text-align: left;
+		font-size: 14px;
+		font-weight: bold;
+		padding-left: 10px;
+		background: #EFF2F7;
+		border: solid 1px #000;
+		cursor: pointer;
+	}
+	#chat .title:hover {
+		background: #D8DFEA;
+	}
+		#chat .title a {
+			width: 10px;
+			height: 10px;
+			line-height: 15px;
+			margin-top: 5px;
+			margin-right: 11px;
+			padding: 5px;
+			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -272px -139px;
+			float: right;
+		}
+		#chat .title a:hover {
+			background: #f2f url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -295px -139px;
+		}
+
+#otwarty {
+	width: 200px;
+	position: absolute;
+	bottom: 0px;
+	right: 250px;
+}
+	#otwarty .tytul {
+		height: 25px;
+		line-height: 25px;
+		text-align: left;
+		font-size: 12px;
+		font-weight: bold;
+		color: #FFF;
+		background: #D8DFEA;;
+		cursor: pointer;
+		border: solid 1px #000; border-bottom: none;
+		padding-left: 10px;
+	}
+	#otwarty .tytul:hover {
+		background: #f21321;
+	}
+		#otwarty .tytul .opcje {
+			width: 11px;
+			height: 12px;
+			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -402px -100px;
+			margin-top: 6px;
+			float: right;
+		}
+		#otwarty .tytul .opcje:hover {
+			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -425px -100px;
+		}
+		#otwarty .tytul .esc {
+			width: 10px;
+			height: 12px;
+			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -277px -142px;
+			margin: 5px;
+			float: right;
+		}
+		#otwarty .tytul .esc:hover {
+			background:  url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -299px -142px;
+		}
+	#otwarty .cialo {
+		width: 198px;
+		height: 250px;
+		border-left: solid 1px #000;
+		border-right: solid 1px #000;
+		overflow: auto;
+	}	
+	#otwarty .pisanie {
+		width: 198px;
+		border: solid 1px #000;
+	}	
+		#otwarty .pisanie span {
+			width: 11px;
+			height: 15px;
+			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -0px -100px;
+			float: left;
+		}
+		#otwarty .pisanie textarea {
+			width: 180px;			
+			height: 20px;
+			border: none;
+			margin-left: 5px;
+		}
+
+#lista {
+	width: 200px;
+	position: fixed;
+	bottom: 0px;
+	right: 20px;
+	background: #D8DFEA;
+	border: solid 1px #000;
+	padding-top: 5px;
+	padding-bottom: 3px;
+}
+	#lista #obramowanie {
+		border-top: solid 1px #000;
+		border-bottom: solid 1px #000;
+	}
+	#lista #obramowanie ul li{
+		width: inherit;
+	}
+	#lista #obramowanie ul li a {
+		background: #EFF2F7;
+		padding: 2px;
+		display: block;
+	}
+	#lista #obramowanie ul li a:hover {
+		background: #D8DFEA;
+		text-decoration: none;
+	}
+		#lista #obramowanie ul li a img {
+			width: 30px;
+			height: 30px;
+			background: #666;
+			vertical-align: middle;
+			display: inline-block;
+		}
+		#lista #obramowanie ul li a .nazwa {
+			width: 150px;
+			text-align: left;
+			margin-left: 3px;
+			display: inline-block;
+		}
+		#lista #obramowanie ul li a .on {
+			width: 7px;
+			height: 7px;
+			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -0px -206px;
+			display: inline-block;
+		}
+		#lista #obramowanie ul li a .off {
+			width: 7px;
+			height: 7px;
+			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -0px -236px;
+			display: inline-block;
+		}
+
