@@ -5,7 +5,7 @@
 @charset "utf-8";
 
 /* === PageCSS ====================================================== */
-
+body{overflow: scroll;}
 #chat {
 	width: 200px;
 	position:fixed;
@@ -13,31 +13,31 @@
 	right: 460px;
 }
 	#chat .title {
-		height: 30px;
-		line-height: 30px;
+		height: 22px;
+		line-height: 22px;
 		text-align: left;
-		font-size: 14px;
+		font-size: 12px;
 		font-weight: bold;
 		padding-left: 10px;
-		background: #EFF2F7;
-		border: solid 1px #000;
+		background: #ebeef4;
+		border: solid 1px rgba(0, 0, 0, .3);
 		cursor: pointer;
 	}
 	#chat .title:hover {
-		background: #D8DFEA;
+		background: #f5f7fa;
 	}
 		#chat .title a {
-			width: 10px;
-			height: 10px;
+			width: 8px;
+			height: 8px;
 			line-height: 15px;
-			margin-top: 5px;
+			margin-top: 3px;
 			margin-right: 11px;
-			padding: 5px;
-			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -272px -139px;
+			padding: 4px;
+			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -274px -140px;
 			float: right;
 		}
 		#chat .title a:hover {
-			background: #f2f url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -295px -139px;
+			background: #627bae url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -296px -140px;
 		}
 
 #otwarty {
@@ -53,23 +53,23 @@
 		font-size: 12px;
 		font-weight: bold;
 		color: #FFF;
-		background: #D8DFEA;;
+		background: #6D84B4;
 		cursor: pointer;
-		border: solid 1px #000; border-bottom: none;
+		border: solid 1px rgba(0, 0, 0, .3); border-bottom: none;
 		padding-left: 10px;
 	}
 	#otwarty .tytul:hover {
-		background: #f21321;
+		background: #627bae;
 	}
 		#otwarty .tytul .opcje {
-			width: 11px;
+			width: 12px;
 			height: 12px;
-			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -402px -100px;
+			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -401px -100px;
 			margin-top: 6px;
 			float: right;
 		}
 		#otwarty .tytul .opcje:hover {
-			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -425px -100px;
+			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -424px -100px;
 		}
 		#otwarty .tytul .esc {
 			width: 10px;
@@ -84,40 +84,53 @@
 	#otwarty .cialo {
 		width: 198px;
 		height: 250px;
-		border-left: solid 1px #000;
-		border-right: solid 1px #000;
+		border-left: solid 1px rgba(0, 0, 0, .3);
+		border-right: solid 1px rgba(0, 0, 0, .3);
 		overflow: auto;
 	}	
 	#otwarty .pisanie {
 		width: 198px;
-		border: solid 1px #000;
+		height: 22px;
+		border: solid 1px rgba(0, 0, 0, .3);
+		float: left;
 	}	
 		#otwarty .pisanie span {
 			width: 11px;
 			height: 15px;
 			background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -0px -100px;
-			float: left;
+			position: absolute;
+			bottom: 5px;left: 5px;
 		}
 		#otwarty .pisanie textarea {
-			width: 180px;			
-			height: 20px;
+			width: 175px;			
+			height: 15px;
+			line-height: 15px;
+			font-size: 12px;
 			border: none;
-			margin-left: 5px;
+			overflow: none;
+			position: absolute;
+			right: 1px;
+			margin-top: 2px;outline-style: none;
 		}
 
 #lista {
-	width: 200px;
+	width: 210px;
+	height: 95%;
 	position: fixed;
-	bottom: 0px;
-	right: 20px;
+	bottom: 22px;
+	right: 0px;
 	background: #D8DFEA;
-	border: solid 1px #000;
+	border: solid 1px rgba(0, 0, 0, .3);
 	padding-top: 5px;
 	padding-bottom: 3px;
 }
 	#lista #obramowanie {
+		height: 100%;
 		border-top: solid 1px #000;
 		border-bottom: solid 1px #000;
+		margin-top: 2px;
+		margin-bottom: 6px;
+		overflow: auto;
 	}
 	#lista #obramowanie ul li{
 		width: inherit;
@@ -157,3 +170,47 @@
 			display: inline-block;
 		}
 
+#men {
+	width: 210px;
+	height: 22px;
+	background: #EFF2F7;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	border: solid 1px rgba(0, 0, 0, .3);
+}
+	#men input[type=text] {
+		height: 19px;
+		border: none;
+		border-right: solid 1px rgba(0, 0, 0, .3);
+		background: none;
+		outline: none;float: left;
+	}
+
+#men span {
+	width: 22px;
+	height: 21px;
+	float: left;
+	background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -0px -263px;
+}
+	#men a {
+		width: 24px;
+		height: 20px;
+		background: #fff;float: left;
+	}
+	#men a#opc {
+		border-right: solid 1px rgba(0, 0, 0, .3);
+		background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -30px -65px;
+	}
+	#men a#es {
+		width: 25px;
+		height: 20px;
+		background: url(http://static.ak.fbcdn.net/rsrc.php/v1/yw/r/vUFtxHntqDs.png) -55px -65px;
+		float: left;
+	}
+	#men a#es:hover {
+		background-color: #fff;
+	}
+	#men a#opc:hover {
+		background-color: #fff;
+	}
